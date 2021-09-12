@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+button {
+    background-color: white;
+    cursor: pointer;
+    width: 95%;
+}
+button:hover {
+    border-color: transparent;
+    box-shadow: 0 0 1rem 0 rgb(42 42 42 / 50%);
+    transform: scale(1.05);
+}
+
+main h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+
+header {
+    box-sizing: border-box;
+    height: 10vh;
+    padding: 1.5rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+
+    background-color: rgb(0, 0, 167);
+    color: beige;
+}
+
+footer {
+    box-sizing: border-box;
+    height: 10vh;
+    padding: 2rem 0;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+
+    background-color: rgb(0, 0, 167);
+    color: beige;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer i {
+    margin: 0 0.6rem;
+    transition: transform 0.4s;
+}
+footer i:hover {
+    transform: rotate(360deg);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+
+.score-display-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#middle-display {
+    position: relative;
+    align-self: center;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#middle-display h2 {
+    box-sizing: border-box;
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+#middle-display #game-result-display {
+    position: absolute;
+    top: -5rem;
+}
+
+#buttons-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    margin: 3rem 0;
+}
+button.player-option {
+    padding: 0.5rem;
+    justify-self: center;
+}
+button.player-option img {
+    width: 100%;
+} 
+button#play-button {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 4;
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.selection-display img {
+    width: 30%;
+}
+
+.display-none {
+    display: none;
+}
+
+.green-background {
+    background-color: rgb(8, 165, 102);
+    color: white;
+}
+.red-background {
+    background-color: rgb(237, 78, 78);
+    color: white;
+}
+.beige-background {
+    background-color: rgb(240, 240, 209);
+}
+
+
+

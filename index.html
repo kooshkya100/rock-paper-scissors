@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
-    <script src='scripts/script.js'></script>
+    <link rel="stylesheet" href="styles/cssreset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src='scripts/script.js' defer></script>
+    <script src="https://kit.fontawesome.com/c353415b05.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class='beige-background'>
+        <div id="player-display" class='score-display-section'>
+            <h1 class='display-label'>You</h1>
+            <div id="player-selection-display" class='selection-display'>
+                <img src="images/rock.png" alt="Your selection">
+            </div>
+            <h1 id='player-score-board' class='score-board'>0</h1>
+        </div>
+
+        <div id="middle-display">
+            <h2 id='game-result-display' class='display-none'>You Win!</h2>
+            <h2 id='game-status-display'>Press play to start</h2>
+
+            <div id='buttons-list'>
+                <button data-value='rock' class='player-option display-none'><img src="images/rock.png" alt="ROCK"></button>
+                <button data-value='paper' class='player-option display-none'><img src="images/paper.png" alt="PAPER"></button>
+                <button data-value='scissors' class='player-option display-none'><img src="images/scissors.png" alt="SCISSORS"></button>
+                <button class='' id="play-button">Start The Game!</button>
+            </div>
+            
+        </div>
+
+        <div id="computer-display" class='score-display-section'>
+            <h1 class='display-label'>Computer</h1>
+            <div id="computer-selection-display" class='selection-display'>
+                <img src="images/questionmark.png" alt="Computer's selection">
+            </div>
+            <h1 id='computer-score-board' class='score-board'>0</h1>
+        </div>  
+    </main>
+
+    <footer>
+        <p>Developed by <a href='https://github.com/kooshkya100' target='_blank'>Amir Kooshky</a>   <a href='https://github.com/kooshkya100' target='_blank'><i class="fab fa-github"></i></a><a href="https://twitter.com/AKooshky" target='_blank'><i class="fab fa-twitter"></i></a><a href="https://t.me/kooshkya" target='_blank'><i class="fab fa-telegram-plane"></i></a></p>
+    </footer>
 </body>
 </html>
